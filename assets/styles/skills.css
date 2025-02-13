@@ -1,0 +1,249 @@
+#services {
+    padding: 50px;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: crimson;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: gray;
+    color: crimson;
+
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: crimson;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.service-card .cta-btn {
+    background-color: crimson;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service-card .cta-btn:hover {
+    background-color: gray;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.services-container .service-card {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+.services-container .service-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.services-container .service-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.services-container .service-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.services-container .service-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#skills {
+    padding: 0;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: crimson;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-category {
+    margin-bottom: 40px;
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    color: crimson;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 1.3s ease, box-shadow 1.3s ease;
+}
+
+.skill-card:hover{
+    transform: scale(1.05);
+    background-color: crimson;
+    color: whitesmoke;
+}
+.skill-card:hover i{
+    color: whitesmoke;
+}
+.skill-card:hover .progress{
+    color: whitesmoke;
+    background-color: whitesmoke;
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: crimson;
+    margin-bottom: 15px;
+}
+
+.skill-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress {
+    background-color: crimson;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 1.5s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skills-grid .skill-card {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+.skills-grid .skill-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.skills-grid .skill-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.skills-grid .skill-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.skills-grid .skill-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .skills-grid{
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .skill-card{
+        width: 40%;
+    }
+}
