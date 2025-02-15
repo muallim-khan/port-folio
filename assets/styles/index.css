@@ -78,12 +78,17 @@ body {
     color: whitesmoke;
     line-height: 1.1;
     text-align:right !important;
+    font-size: 7vmin;
+    text-wrap: nowrap;
+    -webkit-text-stroke: .5px crimson;
 }
 .hero-left h2{
     text-align: left;
     color: gray;
 }
-
+#mobile{
+    display: none;
+}
 .text {
     font-size: 2rem;
     font-weight: bold;
@@ -127,6 +132,7 @@ body {
     margin-top: 15px;
     font-size: 1.1rem;
     line-height: 1.6;
+    color: whitesmoke;
 }
 .cta-btn {
     display: inline-block;
@@ -256,11 +262,16 @@ a{
         justify-content: center;
         align-items: center;
     }
+    #mobile{
+        display: block;
+        color: white;
+    }
     .hero-right img {
         max-width: max-content;
     }
     .hero-left p {
       text-align: justify;
+
     }
 }
 
@@ -293,7 +304,6 @@ width: 300px;
 height: 300px;
 border-radius: 30%;
 object-fit: cover;
-border: 5px solid crimson;
 }
 .about-content{
   width: 60%;
