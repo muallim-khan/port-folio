@@ -107,6 +107,7 @@
     .services-container {
         grid-template-columns: 1fr;
     }
+    .service-card{}
 }
 
 
@@ -245,5 +246,8 @@
     }
     .skill-card{
         width: 40%;
+    }
+    #services{
+        padding: 0;
     }
 }

@@ -117,8 +117,8 @@
     .container {
         flex-direction: column;
         width: 100vw;
-        height: 90vh !important;
-        max-height: 100vh;
+        height: 110vh !important;
+        max-height: 130vh;
     }
     .contact-info {
         text-align: center;

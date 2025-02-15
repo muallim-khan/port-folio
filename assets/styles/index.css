@@ -86,9 +86,6 @@ body {
     text-align: left;
     color: gray;
 }
-#mobile{
-    display: none;
-}
 .text {
     font-size: 2rem;
     font-weight: bold;
@@ -212,6 +209,7 @@ a{
 
 /* Mobile Menu */
 .mobile-menu {
+
     display: none;
     flex-direction: column;
     position: absolute;
@@ -249,9 +247,11 @@ a{
         text-align: center;
         height: max-content;
         width: 100vw;
+        margin-top: 0;
     }
     .hero-left{
         margin-bottom: 50px;
+        margin-top: -40px;
     }
     .hero-left, .hero-right {
         width: 100vw;
@@ -262,15 +262,12 @@ a{
         justify-content: center;
         align-items: center;
     }
-    #mobile{
-        display: block;
-        color: white;
-    }
     .hero-right img {
         max-width: max-content;
     }
     .hero-left p {
       text-align: justify;
+      padding: 20px;
 
     }
 }
@@ -413,7 +410,16 @@ height: auto;
 max-width: 90%;
 max-height: 90%;
 }
+
+#projects {
+    padding: 0 !important;
+    }
+    
+.project-card{
+    padding: 0;
 }
+}
+
 
 
 #projects {
