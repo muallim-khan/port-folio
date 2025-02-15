@@ -1,0 +1,120 @@
+/* Animated "Hello World" Text */
+.text-animation {
+    width:100%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    font-weight: bold;
+    white-space: nowrap;
+    }
+    .text-animation h2{
+        color: whitesmoke;
+        font-size: 2rem;
+        text-align: right !important;
+    }
+
+   
+      /* Animated Button */
+  .button-container {
+    position: absolute;
+    width: 400px;
+    height: 10vh;
+    }
+    
+    #animated-button {
+    position: absolute;
+    padding: 24px 24px;
+    border-radius: 20px;
+    outline: #fff;
+    border: none;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: #fff;
+    background-color: crimson;
+    }
+    
+
+    @media (max-width: 768px) {
+        .text-animation h2{
+            margin-top: 20px;
+            width:100%;
+            font-size: 1.6rem;
+            font-weight: bold;
+           
+        }
+}
+
+
+
+/* cube rotate */
+  
+.cube-container {
+    perspective: 1000px;
+    }
+    
+    .cube {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateCube 5s infinite linear;
+    }
+    
+    .face {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    }
+    
+    .front {
+    transform: translateZ(18px);
+    background:crimson;
+    color: #fff;
+    }
+    
+    .back {
+    transform: rotateY(180deg) translateZ(18px);
+    background: black;
+    color: #fff;
+    }
+    
+    .left {
+    transform: rotateY(-90deg) translateZ(18px);
+    background: #fff;
+    color: crimson;
+    }
+    
+    .right {
+    transform: rotateY(90deg) translateZ(18px);
+    background : #fff;
+    color: rgba(255, 215, 0, 0.7) ;
+    }
+    
+    .top {
+    transform: rotateX(90deg) translateZ(18px);
+    background: rgba(255, 215, 0, 0.7);
+    color: #fff;
+    }
+    
+    .bottom {
+    transform: rotateX(-90deg) translateZ(18px);
+    background: rgba(0, 191, 255, 0.7);
+    color: yellow;
+    }
+    
+    @keyframes rotateCube {
+    0% {
+    transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+    transform: rotateX(360deg) rotateY(360deg);
+    }
+    }
